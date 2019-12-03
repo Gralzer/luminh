@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+	<div>
+		<div>
+			<form action="login.php" method="post">
+				<fieldset>
+					<legend>Login to your account</legend>
+					<p>
+						<label for="email">Enter your email</label>
+						<input type="email" name="email" id="email" maxlength="50" required>
+					</p>
+					<p>
+						<label for="password">Enter your password</label>
+						<input type="password" name="password" id="password" maxlength="8" required>
+					</p>
+					<input type="submit" value="Login" name="login"/>
+				</fieldset>
+			</form>
+			</br><input type="submit" value="Return" name="return" onclick="window.location.href = 'homepage.php';"/>
+		</div>
+	</div>
+</body>
+</html>

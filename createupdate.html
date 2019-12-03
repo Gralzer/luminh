@@ -1,0 +1,38 @@
+<?php
+	require 'authenticate.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Update category</title>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+	<div>
+		<div>
+			<form action="createupdate.php" method="post">
+				<fieldset>
+					<legend>Create or update category</legend>
+					<p>
+						<label for="old">Enter old category name</label>
+						<input type="text" name="old" id="old" maxlength="20">
+					</p>
+					<p>
+						<label for="category">Enter category name</label>
+						<input type="text" name="category" id="category" maxlength="20" required>
+					</p>
+					<p>
+						<label for="link">Enter page link</label>
+						<input type="text" name="link" id="link" maxlength="50" required>
+					</p>
+					<input type="submit" value="Update" name="update"/>
+				</fieldset>
+			</form>
+			</br><input type="submit" value="Return" name="return" onclick="window.location.href = 'homepage.php';"/>
+		</div>
+	</div>
+</body>
+</html>
